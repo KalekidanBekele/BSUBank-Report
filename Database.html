@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Database</title>
+    <link rel="stylesheet" href="style/nicepage.css" media="screen">
+<link rel="stylesheet" href="style/Database.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-8087"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="Home.html" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40" title="BSU Bank">
+        </a>
+        <nav class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="MD">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Home.html" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Services.html" style="padding: 10px 0px;">Services</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Error-Handling.html" style="padding: 10px 0px;">Error Handling</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Database.html" style="padding: 10px 0px;">Database</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Hosting.html" style="padding: 10px 0px;">Hosting</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="About.html" style="padding: 10px 0px;">About</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Services.html">Services</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Error-Handling.html">Error Handling</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Database.html">Database</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Hosting.html">Hosting</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-right u-clearfix u-image u-section-1" id="carousel_31de" data-image-width="1280" data-image-height="743">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-grey-50 u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h1 class="u-text u-text-1">Backend: Databases</h1>
+            <h5 class="u-align-center u-text u-text-body-alt-color u-text-2"> Efficiently managing and organizing large amounts of data with databases</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-palette-5-light-2 u-section-2" id="carousel_dcf7">
+      <h2 class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-1">Databases Used During This Project</h2>
+      <p class="u-align-center u-text u-text-2"> The purpose of databases is to provide a structured and organized way to store and manage data. Databases allow for efficient retrieval, modification, and querying of large amounts of data. They also provide mechanisms for ensuring data integrity and security, and enable multiple users or applications to access and modify data simultaneously. Overall, databases are a critical component of many software applications and are essential for managing and analyzing complex data.</p>
+      <div class="u-expanded-width u-palette-5-base u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-clearfix u-gutter-26 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-20 u-size-30-md">
+              <div class="u-layout-col">
+                <div class="u-align-center u-container-style u-layout-cell u-radius-20 u-shape-round u-size-30 u-white u-layout-cell-1">
+                  <div class="u-container-layout u-container-layout-1">
+                    <img class="u-expanded-width u-image u-image-round u-radius-10 u-image-1" src="style/images/PhpMyAdmin_logo.svg.png" data-image-width="1200" data-image-height="669">
+                    <h4 class="u-text u-text-default u-text-3">phpMyAdmin</h4>
+                    <p class="u-text u-text-4"> phpMyAdmin is a free and open-source web-based administration tool for managing MySQL and MariaDB databases. It allows users to manage database tables, execute SQL queries, import and export data, and perform other database management tasks through a graphical user interface.</p>
+                  </div>
+                </div>
+                <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-30 u-layout-cell-2">
+                  <div class="u-container-layout u-container-layout-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-20 u-size-30-md">
+              <div class="u-layout-col">
+                <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-20 u-layout-cell-3">
+                  <div class="u-container-layout u-container-layout-3"></div>
+                </div>
+                <div class="u-align-center u-container-style u-layout-cell u-radius-20 u-shape-round u-size-20 u-white u-layout-cell-4">
+                  <div class="u-container-layout u-container-layout-4">
+                    <img class="u-expanded-width u-image u-image-round u-radius-10 u-image-2" src="style/images/mysql_workbench.webp" data-image-width="490" data-image-height="284">
+                    <h4 class="u-text u-text-default u-text-5">MySQL Workbench</h4>
+                    <p class="u-text u-text-6"> MySQL Workbench is a visual tool that provides a graphical interface for managing and working with MySQL databases. It allows users to design, model, create, and manage databases, tables, and relationships between them, as well as execute SQL queries and scripts.</p>
+                  </div>
+                </div>
+                <div class="u-container-style u-hidden-md u-hidden-sm u-hidden-xs u-layout-cell u-size-20 u-layout-cell-5">
+                  <div class="u-container-layout u-container-layout-5"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-20 u-size-60-md">
+              <div class="u-layout-col">
+                <div class="u-container-style u-hidden-md u-hidden-sm u-hidden-xs u-layout-cell u-size-30 u-layout-cell-6">
+                  <div class="u-container-layout u-container-layout-6"></div>
+                </div>
+                <div class="u-align-center u-container-style u-layout-cell u-radius-20 u-shape-round u-size-30 u-white u-layout-cell-7">
+                  <div class="u-container-layout u-container-layout-7">
+                    <img class="u-expanded-width u-image u-image-round u-radius-15 u-image-3" src="style/images/UhN13W-J_400x400.jpg" data-image-width="400" data-image-height="400">
+                    <h4 class="u-text u-text-default u-text-7">ClearDB</h4>
+                    <p class="u-text u-text-8"> ClearDB is a cloud-based database service that provides MySQL databases as a service on various cloud platforms, including Heroku.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-5-light-3 u-section-3" id="sec-5b8c">
+      <div class="u-expanded-width u-palette-5-light-2 u-shape u-shape-rectangle u-shape-1"></div>
+      <img class="u-image u-image-round u-radius-20 u-image-1" src="style/images/ad1493aa3f86275016355aab91461978de60c2b3143c24d00f189023116f0440efacd9dbeb86da9d326b51613fb0f3712fe8955e2fc3fa99ff2a61_1280.png" alt="" data-image-width="1280" data-image-height="1280">
+      <div class="u-align-left u-container-style u-group u-palette-5-dark-3 u-radius-25 u-shape-round u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h4 class="u-align-left u-custom-font u-text u-text-default u-text-font u-text-1">Heroku Setup Issues</h4>
+          <p class="u-align-left u-text u-text-2"> After installing the Heroku CLI and configuring access to a database, error messages like "Error: SequelizeConnectionError: connect ETIMEDOUT" were resolved. However, using Heroku was a bit more complex for me because I am running Windows 11 instead of macOS.</p>
+          <a href="Hosting.html" class="u-active-palette-1-dark-3 u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-dark-1 u-radius-14 u-btn-1">Hosting</a>
+        </div>
+      </div>
+      <div class="u-align-left u-container-style u-group u-radius-20 u-shape-round u-white u-group-2">
+        <div class="u-container-layout u-container-layout-2">
+          <h3 class="u-align-left u-text u-text-3">Process of Choosing a Database<br>
+          </h3>
+          <p class="u-align-left u-text u-text-4">Initially, I utilized phpMyAdmin as it was a convenient method to create and link the database to the code. However, I adapted to the class curriculum and switched to using MySQL Workbench by connecting the phpMyAdmin database to the Workbench. Ultimately, to host the banking platform on Heroku, I opted for ClearDB as it was a compatible database with Heroku.</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d364"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">This is the bottom of the page.</p>
+      </div></footer>
+  
+</body></html>

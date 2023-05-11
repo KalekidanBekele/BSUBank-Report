@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Error Handling</title>
+    <link rel="stylesheet" href="style/nicepage.css" media="screen">
+<link rel="stylesheet" href="style/Error-Handling.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-8087"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="Home.html" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40" title="BSU Bank">
+        </a>
+        <nav class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="MD">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Home.html" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Services.html" style="padding: 10px 0px;">Services</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Error-Handling.html" style="padding: 10px 0px;">Error Handling</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Database.html" style="padding: 10px 0px;">Database</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Hosting.html" style="padding: 10px 0px;">Hosting</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="About.html" style="padding: 10px 0px;">About</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Services.html">Services</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Error-Handling.html">Error Handling</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Database.html">Database</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Hosting.html">Hosting</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-center u-clearfix u-image u-section-1" src="" id="carousel_deab" data-image-width="1280" data-image-height="967">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-grey-30 u-opacity u-opacity-65 u-shape u-shape-circle u-shape-1"></div><span class="u-file-icon u-icon u-icon-1"><img src="style/images/9426995.png" alt=""></span>
+        <h1 class="u-color-scheme-u10 u-color-style-multicolor-1 u-text u-text-body-alt-color u-title u-text-1">Error Handling </h1>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="carousel_2347">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1280" data-image-height="865">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div class="u-align-center u-container-style u-grey-5 u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-text u-text-1">Error Handling and Flash Messages</h2>
+                  <p class="u-text u-text-grey-40 u-text-2"> Error handling code is used to anticipate and manage potential errors in a software application, preventing crashes and improving user experience. Flash messages provide immediate feedback to the user, reducing frustration and enhancing the overall user experience.<br>By implementing error handling techniques and providing informative flash messages, our application can provide reliable and responsive services, enhancing the overall user experience.<br>
+                  </p>
+                  <a href="Services.html" class="u-active-palette-1-dark-3 u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-dark-1 u-radius-50 u-btn-1">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-80 u-section-3" id="carousel_afc9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">Flash and Error Messages Used Within the Application</h3>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-left u-container-style u-list-item u-radius-28 u-repeater-item u-shape-round u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-text-black u-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496.011 496.011" style=""><use xlink:href="#svg-e3a7"></use></svg><svg class="u-svg-content" viewBox="0 0 496.011 496.011" x="0px" y="0px" id="svg-e3a7" style="enable-background:new 0 0 496.011 496.011;"><g><g><g><path d="M408,180.107c-4.418,0-8,3.582-8,8v263.904H16v-384h320c4.418,0,8-3.582,8-8s-3.582-8-8-8H8c-4.418,0-8,3.582-8,8v400     c0,4.418,3.582,8,8,8h400c4.418,0,8-3.582,8-8V188.107C416,183.688,412.418,180.107,408,180.107z"></path><path d="M493.728,30.411c-3.093-3.163-8.165-3.221-11.328-0.128L168.464,336.387L62.016,214.747     c-2.684-3.51-7.704-4.18-11.214-1.496s-4.18,7.704-1.496,11.214c0.218,0.286,0.456,0.556,0.711,0.81l112,128     c1.435,1.647,3.482,2.636,5.664,2.736H168c2.092,0.004,4.102-0.812,5.6-2.272l320-312     C496.763,38.646,496.821,33.574,493.728,30.411z"></path>
+</g>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-2"> When incorrect information, such as non-existent user credentials, is entered, an error message will appear. This will be indicated by a message below the navigation bar which reads "Invalid email or password".</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-28 u-repeater-item u-shape-round u-video-cover u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496.011 496.011" style=""><use xlink:href="#svg-a6e3"></use></svg><svg class="u-svg-content" viewBox="0 0 496.011 496.011" x="0px" y="0px" id="svg-a6e3" style="enable-background:new 0 0 496.011 496.011;"><g><g><g><path d="M408,180.107c-4.418,0-8,3.582-8,8v263.904H16v-384h320c4.418,0,8-3.582,8-8s-3.582-8-8-8H8c-4.418,0-8,3.582-8,8v400     c0,4.418,3.582,8,8,8h400c4.418,0,8-3.582,8-8V188.107C416,183.688,412.418,180.107,408,180.107z"></path><path d="M493.728,30.411c-3.093-3.163-8.165-3.221-11.328-0.128L168.464,336.387L62.016,214.747     c-2.684-3.51-7.704-4.18-11.214-1.496s-4.18,7.704-1.496,11.214c0.218,0.286,0.456,0.556,0.711,0.81l112,128     c1.435,1.647,3.482,2.636,5.664,2.736H168c2.092,0.004,4.102-0.812,5.6-2.272l320-312     C496.763,38.646,496.821,33.574,493.728,30.411z"></path>
+</g>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-3"> When depositing or withdrawing money from the balance, a flash message will be displayed to inform the user whether the transaction was successful or not. The flash message will indicate whether the user has deposited or withdrawn a certain amount of money.</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-28 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-icon u-icon-circle u-text-black u-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496.011 496.011" style=""><use xlink:href="#svg-0b45"></use></svg><svg class="u-svg-content" viewBox="0 0 496.011 496.011" x="0px" y="0px" id="svg-0b45" style="enable-background:new 0 0 496.011 496.011;"><g><g><g><path d="M408,180.107c-4.418,0-8,3.582-8,8v263.904H16v-384h320c4.418,0,8-3.582,8-8s-3.582-8-8-8H8c-4.418,0-8,3.582-8,8v400     c0,4.418,3.582,8,8,8h400c4.418,0,8-3.582,8-8V188.107C416,183.688,412.418,180.107,408,180.107z"></path><path d="M493.728,30.411c-3.093-3.163-8.165-3.221-11.328-0.128L168.464,336.387L62.016,214.747     c-2.684-3.51-7.704-4.18-11.214-1.496s-4.18,7.704-1.496,11.214c0.218,0.286,0.456,0.556,0.711,0.81l112,128     c1.435,1.647,3.482,2.636,5.664,2.736H168c2.092,0.004,4.102-0.812,5.6-2.272l320-312     C496.763,38.646,496.821,33.574,493.728,30.411z"></path>
+</g>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-4"> In case a user is unable to access the banking platform despite having valid credentials, an error message will be displayed as "An error has occurred". This message will also be used in other situations when other error options are not applicable.</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-28 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
+              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-icon u-icon-circle u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496.011 496.011" style=""><use xlink:href="#svg-6734"></use></svg><svg class="u-svg-content" viewBox="0 0 496.011 496.011" x="0px" y="0px" id="svg-6734" style="enable-background:new 0 0 496.011 496.011;"><g><g><g><path d="M408,180.107c-4.418,0-8,3.582-8,8v263.904H16v-384h320c4.418,0,8-3.582,8-8s-3.582-8-8-8H8c-4.418,0-8,3.582-8,8v400     c0,4.418,3.582,8,8,8h400c4.418,0,8-3.582,8-8V188.107C416,183.688,412.418,180.107,408,180.107z"></path><path d="M493.728,30.411c-3.093-3.163-8.165-3.221-11.328-0.128L168.464,336.387L62.016,214.747     c-2.684-3.51-7.704-4.18-11.214-1.496s-4.18,7.704-1.496,11.214c0.218,0.286,0.456,0.556,0.711,0.81l112,128     c1.435,1.647,3.482,2.636,5.664,2.736H168c2.092,0.004,4.102-0.812,5.6-2.272l320-312     C496.763,38.646,496.821,33.574,493.728,30.411z"></path>
+</g>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-5"> If characters other than numbers are inputted or the amount exceeds a certain limit, an error will occur and the balance will not be updated.</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-28 u-repeater-item u-shape-round u-video-cover u-white u-list-item-5">
+              <div class="u-container-layout u-similar-container u-container-layout-5"><span class="u-icon u-icon-circle u-text-black u-white u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496.011 496.011" style=""><use xlink:href="#svg-b7d2"></use></svg><svg class="u-svg-content" viewBox="0 0 496.011 496.011" x="0px" y="0px" id="svg-b7d2" style="enable-background:new 0 0 496.011 496.011;"><g><g><g><path d="M408,180.107c-4.418,0-8,3.582-8,8v263.904H16v-384h320c4.418,0,8-3.582,8-8s-3.582-8-8-8H8c-4.418,0-8,3.582-8,8v400     c0,4.418,3.582,8,8,8h400c4.418,0,8-3.582,8-8V188.107C416,183.688,412.418,180.107,408,180.107z"></path><path d="M493.728,30.411c-3.093-3.163-8.165-3.221-11.328-0.128L168.464,336.387L62.016,214.747     c-2.684-3.51-7.704-4.18-11.214-1.496s-4.18,7.704-1.496,11.214c0.218,0.286,0.456,0.556,0.711,0.81l112,128     c1.435,1.647,3.482,2.636,5.664,2.736H168c2.092,0.004,4.102-0.812,5.6-2.272l320-312     C496.763,38.646,496.821,33.574,493.728,30.411z"></path>
+</g>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-6"> If a user tries to sign up using an email that already exists in the database, an error flash message will appear, indicating that the email already exists. Moreover, if the password and confirm password do not match, an error message will be displayed, notifying the user that the passwords do not match.</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-28 u-repeater-item u-shape-round u-video-cover u-white u-list-item-6">
+              <div class="u-container-layout u-similar-container u-container-layout-6"><span class="u-icon u-icon-circle u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496.011 496.011" style=""><use xlink:href="#svg-c8f7"></use></svg><svg class="u-svg-content" viewBox="0 0 496.011 496.011" x="0px" y="0px" id="svg-c8f7" style="enable-background:new 0 0 496.011 496.011;"><g><g><g><path d="M408,180.107c-4.418,0-8,3.582-8,8v263.904H16v-384h320c4.418,0,8-3.582,8-8s-3.582-8-8-8H8c-4.418,0-8,3.582-8,8v400     c0,4.418,3.582,8,8,8h400c4.418,0,8-3.582,8-8V188.107C416,183.688,412.418,180.107,408,180.107z"></path><path d="M493.728,30.411c-3.093-3.163-8.165-3.221-11.328-0.128L168.464,336.387L62.016,214.747     c-2.684-3.51-7.704-4.18-11.214-1.496s-4.18,7.704-1.496,11.214c0.218,0.286,0.456,0.556,0.711,0.81l112,128     c1.435,1.647,3.482,2.636,5.664,2.736H168c2.092,0.004,4.102-0.812,5.6-2.272l320-312     C496.763,38.646,496.821,33.574,493.728,30.411z"></path>
+</g>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-7"> When logging out, the user will be redirected back to their account. However, any attempt to make changes will result in an intentional error message being displayed, indicating that it is not possible to alter the account after logging out. This serves as a reminder to the user that any changes should be made before logging out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="carousel_fbef">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-25-lg u-size-25-xl u-size-29-sm u-size-29-xs u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-size-60">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-60 u-white u-layout-cell-1">
+                        <div class="u-container-layout u-valign-middle u-container-layout-1">
+                          <h3 class="u-text u-text-default u-text-1"> The flash package in Node.js is used to display temporary messages to the user. These messages provide feedback about actions or errors and are stored in a session, making them accessible across multiple requests and responses.</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-31-sm u-size-31-xs u-size-35-lg u-size-35-xl u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-size-40">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-layout-cell u-left-cell u-opacity u-opacity-35 u-palette-5-light-2 u-shape-rectangle u-size-60 u-layout-cell-2">
+                        <div class="u-container-layout u-container-layout-2">
+                          <h2 class="u-text u-text-2">Flash Package From Node</h2>
+                          <p class="u-text u-text-3"> Using the flash package provided by Node after installation, flash message will appear if written correctly and used an if statement in the HTML file.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-size-20">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-3" src="">
+                        <div class="u-container-layout u-container-layout-3">
+                          <h4 class="u-text u-text-4">Examples of Flash Messages</h4><span class="u-icon u-icon-circle u-text-black u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 487 487" style=""><use xlink:href="#svg-bf3c"></use></svg><svg class="u-svg-content" viewBox="0 0 487 487" x="0px" y="0px" id="svg-bf3c" style="enable-background:new 0 0 487 487;"><g><path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10   c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66   c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66   C487,239.927,485.094,236.625,482,234.839z"></path>
+</g></svg></span>
+                        </div>
+                      </div>
+                      <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" data-image-width="640" data-image-height="164">
+                        <div class="u-container-layout u-container-layout-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d364"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">This is the bottom of the page.</p>
+      </div></footer>
+  
+</body></html>
